@@ -17,6 +17,14 @@ export class CourseComponent implements OnInit {
    
     this.courses = courseService.getCourseArray(); //Service Data Bind here 
   }
+
+  clickDivFunction(){
+    console.log('div function call');
+  }
+  clickButtonFunction($event){
+    $event.stopPropagation();
+    console.log("button function call");
+  }
   ngOnInit() {
   }
 }

@@ -1,6 +1,4 @@
-<h2>
- <b>{{ coursesheading }}</b> 
-</h2>
+<h2 [textContent]="coursesheading"></h2>
 <strong>
   {{ courseSubTile }}
     <input type="text" appAutoGrew>
@@ -12,3 +10,10 @@
 <img src="{{ imgUrl }}" alt="" width="200" height="200">
 <img [src]="imgUrl" alt="" width="200" height="200">
 <img bind-src="imgUrl" alt="" width="200" height="200">
+<button [style.backgroundColor]="'blue'">Submit Data</button>
+<div (click)="clickDivFunction()">
+  <button (click)="clickButtonFunction($event)">Submit Data </button>
+</div>
+
+
+<input type="text" [value]="courseSubTile" (input)="courseSubTile=$event.target.value">

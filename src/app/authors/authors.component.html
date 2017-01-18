@@ -1,6 +1,4 @@
-<h1>
-  {{ mainHeading }}
-</h1>
+<h1 [textContent]="mainHeading"></h1>
 <strong>{{ subHeadingTitle }}</strong>
 <li *ngFor="let author of authorArrayData">
   {{ author }}
