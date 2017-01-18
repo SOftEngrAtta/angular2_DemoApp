@@ -3,8 +3,8 @@ import { Directive , ElementRef ,Renderer} from '@angular/core';
 @Directive({
   selector: '[appAutoGrew]',
   host : {
-    '(doubleClick)' : 'onFocus()',
-    '(mouseout)' : 'onBlur()'
+    '(focus)' : 'onFocus()',
+    '(blur)' : 'onBlur()'
   }
 })
 export class AutoGrewDirective {
